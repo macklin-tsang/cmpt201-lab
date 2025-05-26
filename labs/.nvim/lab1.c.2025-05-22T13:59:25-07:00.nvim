@@ -1,0 +1,12 @@
+#define _POSIX_C_SOURCE 200809L
+#include <stdio.h>
+#include <unistd.h>
+
+int main()
+{ 
+  printf("Hello World");
+  char *buff = NULL;
+  char size = 0;
+  ssize_t numChar = getline(&buff, &size, stdin);
+  free(buff);
+}
