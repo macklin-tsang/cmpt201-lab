@@ -69,7 +69,7 @@ int main() {
   print_out("second block next: %p\n", &second_block->next,
             sizeof(second_block->next));
   print_block((char *)first_block);
-  printblock((char *)second_block);
+  print_block((char *)second_block);
 
   return 0;
 }
